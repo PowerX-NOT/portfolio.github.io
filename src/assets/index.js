@@ -6,11 +6,11 @@ import worldmap from './backgrounds/world-map.png';
 import logo from './logo/logo-black.png';
 import logotext from './logo/logo-text-black.png';
 
-import shaq from './personal/shaq.png';
+import pc from './personal/pc.png';
 
 import backend from './icons/backend.png';
 import ux from './icons/ux.png';
-import frontend from './icons/frontend.png';
+import JGI from './icons/JGI.png';
 import prototyping from './icons/prototyping.png';
 import github from './icons/github.png';
 import close from './icons/close.png';
@@ -57,10 +57,10 @@ export {
   worldmap,
   logo,
   logotext,
-  shaq,
+  pc,
   backend,
   ux,
-  frontend,
+  JGI,
   prototyping,
   github,
   close,

@@ -1,5 +1,5 @@
 import {
-  frontend,
+  JGI,
   backend,
   ux,
   prototyping,
@@ -46,11 +46,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Frontend Developer',
-    icon: frontend,
+    title: 'Computer Science @ JAIN',
+    icon: JGI,
   },
   {
-    title: 'Backend Developer',
+    title: 'Competitve Programming',
     icon: backend,
   },
   {
