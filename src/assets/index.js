@@ -8,6 +8,10 @@ import logotext from './logo/logo-text-black.png';
 
 import pc from './personal/pc.png';
 
+import githubLogo from './icons/githubLogo.png';
+import linkedinLogo from './icons/linkedinLogo.png';
+import instaLogo from './icons/instaLogo.png';
+
 import backend from './icons/backend.png';
 import ux from './icons/ux.png';
 import JGI from './icons/JGI.png';
@@ -50,6 +54,9 @@ export {
   logo,
   logotext,
   pc,
+  githubLogo,
+  linkedinLogo,
+  instaLogo,
   backend,
   ux,
   JGI,

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { pc, bwmap, worldmap } from '../assets';
+import { pc, bwmap, worldmap, githubLogo, linkedinLogo, instaLogo } from '../assets';
 
 const Hero = () => {
   return (
@@ -49,6 +49,30 @@ const Hero = () => {
               And I'm debugging my way to something <br className="sm:block hidden" />
               massive.
             </p>
+            {/* Social links */}
+            <div className="flex items-center mt-4 space-x-4">
+              <a
+                href="https://github.com/PowerX-NOT"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform transform hover:scale-110">
+                <img src={githubLogo} alt="GitHub" className="w-12 h-12" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/pugal-g-29b50329b/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform transform hover:scale-110">
+                <img src={linkedinLogo} alt="LinkedIn" className="w-12 h-12" />
+              </a>
+              <a
+                href="https://www.instagram.com/__.pugal/profilecard/?igsh=czR6cGV6OXB5NTZu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform transform hover:scale-110">
+                <img src={instaLogo} alt="Instagram" className="w-11 h-11" />
+              </a>
+            </div>
           </div>
           <div
             className="w-screen flex flex-col items-start 
