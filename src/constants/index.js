@@ -7,16 +7,11 @@ import {
   typescript,
   html,
   css,
-  reactjs,
-  redux,
-  tailwind,
   nodejs,
   git,
-  figma,
-  docker,
-  postgresql,
-  rubyrails,
-  graphql,
+  mysql,
+  sh,
+  linux,
   komikult,
   leaderboard,
   math,
@@ -81,44 +76,24 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: 'React JS',
-    icon: reactjs,
-  },
-  {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
     name: 'Node JS',
     icon: nodejs,
-  },
-  {
-    name: 'Rails',
-    icon: rubyrails,
-  },
-  {
-    name: 'graphql',
-    icon: graphql,
-  },
-  {
-    name: 'postgresql',
-    icon: postgresql,
   },
   {
     name: 'git',
     icon: git,
   },
   {
-    name: 'figma',
-    icon: figma,
+    name: 'linux',
+    icon: linux,
   },
   {
-    name: 'docker',
-    icon: docker,
+    name: 'sh',
+    icon: sh,
+  },
+  {
+    name: 'mysql',
+    icon: mysql,
   },
 ];
 
