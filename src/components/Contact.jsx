@@ -14,8 +14,11 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const BOT_TOKEN = "7996188369:AAG3wh8HR0yiV2p1mRyf2LrDEoEW7ZE-v8s";
-  const CHAT_ID = "1620311557";
+  // Email validation function
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,10 +28,21 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Validate email before proceeding
+    if (!validateEmail(form.email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
     setLoading(true);
 
+    // Telegram bot configuration
+    const BOT_TOKEN = '7996188369:AAG3wh8HR0yiV2p1mRyf2LrDEoEW7ZE-v8s';
+    const CHAT_ID = '1620311557';
     const MESSAGE = `Name: ${form.name}\nEmail: ${form.email}\nMessage: ${form.message}`;
 
+    // Send the message via Telegram API
     fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
       method: 'POST',
       headers: {
@@ -39,18 +53,17 @@ const Contact = () => {
         text: MESSAGE,
       }),
     })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.ok) {
+      .then((response) => {
+        if (response.ok) {
           setLoading(false);
-          alert('Thank you. I will get back to you as soon as possible!');
+          alert('Thank you. I will get back to you as soon as possible.');
           setForm({
             name: '',
             email: '',
             message: '',
           });
         } else {
-          throw new Error('Failed to send message');
+          throw new Error('Failed to send message.');
         }
       })
       .catch((error) => {
