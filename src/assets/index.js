@@ -38,12 +38,9 @@ import dcc from './company/dcc.png';
 import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
 
-import komikult from './projects/komikult.png';
-import leaderboard from './projects/leaderboard.png';
-import math from './projects/math-magicians.png';
-import movie from './projects/movie-metro.png';
-import nyeusi from './projects/nyeusi.png';
-import space from './projects/space-hub.png';
+import FAD from './projects/FAD.png';
+import DBMS from './projects/DBMS.png';
+import ROM from './projects/ROM.jpg';
 
 export {
   bwmap,
@@ -76,12 +73,9 @@ export {
   sh,
   linux,
   typescript,
-  komikult,
-  leaderboard,
-  math,
-  movie,
-  nyeusi,
-  space,
+  FAD,
+  DBMS,
+  ROM,
   coverhunt,
   dcc,
   kelhel,

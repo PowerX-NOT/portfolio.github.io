@@ -12,12 +12,9 @@ import {
   mysql,
   sh,
   linux,
-  komikult,
-  leaderboard,
-  math,
-  movie,
-  nyeusi,
-  space,
+  FAD,
+  DBMS,
+  ROM,
   coverhunt,
   dcc,
   kelhel,
@@ -131,8 +128,8 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
+    name: 'FAD',
+    description: 'A Financial Analysis Dashboard is a visual tool designed to track, analyze, and display financial data such as income, expenses, savings, and debts. It provides key insights, trends, and performance indicators through interactive charts, graphs, and tables, helping users make informed financial decisions.',
     tags: [
       {
         name: 'react',
@@ -147,15 +144,15 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
+    image: FAD,
+    repo: 'https://github.com/PowerX-NOT/FAD-PCL',
     demo: 'https://shaqdeff.github.io/KomiKult/',
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
+    name: 'DBMS',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
+      'This Flask web application allows users to interact with a MySQL database through a user-friendly interface. Users can perform various database management tasks.',
     tags: [
       {
         name: 'react',
@@ -170,14 +167,14 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
+    image: DBMS,
+    repo: 'https://github.com/PowerX-NOT/DBMS_WebApplication',
     demo: 'https://shaqdeff.github.io/Leaderboard/',
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
+    name: 'Custom ROM',
+    description: 'A Custom ROM is a modified version of the operating system (OS) for Android devices. It is developed by third-party developers or communities and replaces the stock ROM. Custom ROMs offer additional features, customization options, improved performance.',
     tags: [
       {
         name: 'nextjs',
@@ -192,54 +189,9 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
-  },
-  {
-    id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
-  },
-  {
-    id: 'project-5',
-    name: 'Nyeusi Fest Site',
-    description:
-      'This is a demo concert website for a music festival called Nyeusi.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
+    image: ROM,
+    repo: 'https://github.com/Mi-A3-laurel-sprout',
+    demo: 'https://t.me/EvoX_Mi_A3',
   },
 ];
 
