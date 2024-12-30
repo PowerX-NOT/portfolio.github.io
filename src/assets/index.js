@@ -11,7 +11,7 @@ import pc from './personal/pc.png';
 import backend from './icons/backend.png';
 import ux from './icons/ux.png';
 import JGI from './icons/JGI.png';
-import prototyping from './icons/prototyping.png';
+import mobile from './icons/mobile.svg';
 import github from './icons/github.png';
 import close from './icons/close.png';
 import download from './icons/download.png';
@@ -61,7 +61,7 @@ export {
   backend,
   ux,
   JGI,
-  prototyping,
+  mobile,
   github,
   close,
   download,

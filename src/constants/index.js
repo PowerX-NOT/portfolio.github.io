@@ -2,7 +2,7 @@ import {
   JGI,
   backend,
   ux,
-  prototyping,
+  mobile,
   javascript,
   typescript,
   html,
@@ -54,12 +54,12 @@ const services = [
     icon: backend,
   },
   {
-    title: 'UI/UX Design',
+    title: 'Web Development',
     icon: ux,
   },
   {
-    title: 'Software Prototyping',
-    icon: prototyping,
+    title: 'Android & kernel development',
+    icon: mobile,
   },
 ];
 
