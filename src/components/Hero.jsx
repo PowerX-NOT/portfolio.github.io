@@ -1,10 +1,35 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react'; // Import useState and useEffect for the typing effect
 import { styles } from '../styles';
-import { navLinks } from '../constants';
 import { pc, bwmap, worldmap, githubLogo, linkedinLogo, instaLogo } from '../assets';
 
 const Hero = () => {
+  const [text, setText] = useState('');
+  const [showCursor, setShowCursor] = useState(true); // For controlling the cursor visibility
+  const fullText = "And I'm debugging my way to something massive.";
+
+  useEffect(() => {
+    const typingTimer = setInterval(() => {
+      setText((prev) => {
+        if (prev.length < fullText.length) {
+          return fullText.slice(0, prev.length + 1);
+        } else {
+          clearInterval(typingTimer);
+          return prev;
+        }
+      });
+    }, 100); // Adjust speed by changing the interval time (in ms)
+
+    const cursorTimer = setInterval(() => {
+      setShowCursor((prev) => !prev); // Toggle cursor visibility
+    }, 500); // Adjust blinking speed
+
+    return () => {
+      clearInterval(typingTimer);
+      clearInterval(cursorTimer);
+    };
+  }, []);
+
   return (
     <>
       <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
@@ -46,8 +71,8 @@ const Hero = () => {
               </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-              And I'm debugging my way to something <br className="sm:block hidden" />
-              massive.
+              {text}
+              {showCursor && <span>|</span>} {/* Display cursor if showCursor is true */}
             </p>
             {/* Social links */}
             <div className="flex items-center mt-4 space-x-4">

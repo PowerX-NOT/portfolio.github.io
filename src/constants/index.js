@@ -146,7 +146,7 @@ const projects = [
     ],
     image: FAD,
     repo: 'https://github.com/PowerX-NOT/FAD-PCL',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    demo: 'https://powerx-not.github.io/wip-display/',
   },
   {
     id: 'project-2',
@@ -169,7 +169,7 @@ const projects = [
     ],
     image: DBMS,
     repo: 'https://github.com/PowerX-NOT/DBMS_WebApplication',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    demo: 'https://github.com/PowerX-NOT/DBMS_WebApplication?tab=readme-ov-file#setup',
   },
   {
     id: 'project-3',
