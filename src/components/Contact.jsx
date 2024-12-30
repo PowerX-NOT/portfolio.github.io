@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
@@ -15,6 +14,9 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
+  const BOT_TOKEN = "7996188369:AAG3wh8HR0yiV2p1mRyf2LrDEoEW7ZE-v8s";
+  const CHAT_ID = "1620311557";
+
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -25,38 +27,37 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    // sign up on emailjs.com (select the gmail service and connect your account).
-    //click on create a new template then click on save.
-    emailjs
-      .send(
-        'serviceID', // paste your ServiceID here (you'll get one when your service is created).
-        'templateID', // paste your TemplateID here (you'll find it under email templates).
-        {
-          from_name: form.name,
-          to_name: 'YourName', // put your name here.
-          from_email: form.email,
-          to_email: 'youremail@gmail.com', //put your email here.
-          message: form.message,
-        },
-        'yourpublickey' //paste your Public Key here. You'll get it in your profile section.
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert('Thank you. I will get back to you as soon as possible.');
+    const MESSAGE = `Name: ${form.name}\nEmail: ${form.email}\nMessage: ${form.message}`;
 
+    fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        chat_id: CHAT_ID,
+        text: MESSAGE,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.ok) {
+          setLoading(false);
+          alert('Thank you. I will get back to you as soon as possible!');
           setForm({
             name: '',
             email: '',
             message: '',
           });
-        },
-        (error) => {
-          setLoading(false);
-          console.log(error);
-          alert('Something went wrong. Please try again.');
+        } else {
+          throw new Error('Failed to send message');
         }
-      );
+      })
+      .catch((error) => {
+        setLoading(false);
+        console.error(error);
+        alert('Something went wrong. Please try again.');
+      });
   };
 
   return (
