@@ -77,19 +77,19 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: 'git',
+    name: 'Git',
     icon: git,
   },
   {
-    name: 'linux',
+    name: 'Linux',
     icon: linux,
   },
   {
-    name: 'sh',
+    name: 'ShellScript',
     icon: sh,
   },
   {
-    name: 'mysql',
+    name: 'MySql',
     icon: mysql,
   },
 ];
