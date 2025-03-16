@@ -42,6 +42,8 @@ import dcc from './company/dcc.png';
 import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
 
+import GYM from './projects/GYM.png';
+import IND from './projects/IND.png';
 import FAD from './projects/FAD.png';
 import DBMS from './projects/DBMS.png';
 import ROM from './projects/ROM.jpg';
@@ -80,6 +82,8 @@ export {
   sh,
   linux,
   typescript,
+  GYM,
+  IND,
   FAD,
   DBMS,
   ROM,

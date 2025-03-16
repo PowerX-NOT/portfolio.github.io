@@ -12,6 +12,8 @@ import {
   mysql,
   sh,
   linux,
+  GYM,
+  IND,
   FAD,
   DBMS,
   ROM,
@@ -128,6 +130,50 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
+    name: 'GYM',
+    description: 'FlexTrack is a modern, responsive web application designed to help gym owners efficiently manage their gym operations. This system streamlines customer management, payment tracking, and business insights in one intuitive interface.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'mongodb',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: GYM,
+    repo: 'https://github.com/PowerX-NOT/gym.io',
+    demo: 'https://powerx-not.github.io/gym.io/',
+  },
+  {
+    id: 'project-2',
+    name: 'IND',
+    description: 'A modern, responsive website for an interior design company built with React, TypeScript, and Tailwind CSS. The website features smooth animations, interactive elements, and a clean, professional design that showcases interior design services and portfolio.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'mongodb',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: IND,
+    repo: 'https://github.com/PowerX-NOT/terracraft.io',
+    demo: 'https://powerx-not.github.io/terracraft.io/',
+  },
+  {
+    id: 'project-3',
     name: 'FAD',
     description: 'A Financial Analysis Dashboard is a visual tool designed to track, analyze, and display financial data such as income, expenses, savings, and debts. It provides key insights, trends, and performance indicators through interactive charts, graphs, and tables, helping users make informed financial decisions.',
     tags: [
@@ -149,7 +195,7 @@ const projects = [
     demo: 'https://powerx-not.github.io/wip-display/',
   },
   {
-    id: 'project-2',
+    id: 'project-4',
     name: 'DBMS',
     description:
       'This Flask web application allows users to interact with a MySQL database through a user-friendly interface. Users can perform various database management tasks.',
@@ -172,7 +218,7 @@ const projects = [
     demo: 'https://github.com/PowerX-NOT/DBMS_WebApplication?tab=readme-ov-file#setup',
   },
   {
-    id: 'project-3',
+    id: 'project-5',
     name: 'Custom ROM',
     description: 'A Custom ROM is a modified version of the operating system (OS) for Android devices. It is developed by third-party developers or communities and replaces the stock ROM. Custom ROMs offer additional features, customization options, improved performance.',
     tags: [
