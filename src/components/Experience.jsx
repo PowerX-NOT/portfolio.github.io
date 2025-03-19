@@ -102,7 +102,7 @@ const Experience = () => {
               ease-in-out"
               onClick={() =>
                 window.open(
-                  'https://github.com/PowerX-NOT/portfolio.github.io/releases/download/resume/resume.jpg',
+                  'https://github.com/PowerX-NOT/portfolio.github.io/releases/download/resume/resume.pdf',
                   '_blank'
                 )
               }
