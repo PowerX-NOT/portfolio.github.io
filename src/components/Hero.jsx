@@ -131,8 +131,7 @@ const Hero = () => {
 
         {/* Spline 3D Viewer */}
         <div
-          className="absolute top-0 right-0 h-screen items-center justify-center z-10 hidden lg:flex"
-          style={{ width: '60vw' }}
+          className="absolute top-0 right-0 h-screen flex items-center justify-center z-10 w-full lg:w-[60vw]"
         >
           <spline-viewer
             class="robo"

@@ -263,13 +263,13 @@
   background: transparent;
   display: block;
   border: none;
-  transform: scale(1.4) translateX(20%);
+  transform: scale(1.4) translateX(20%) translateY(-1%);
   transform-origin: right center;
 }
 
-/* Mobile responsive adjustments for 3D model */
+/* Responsive adjustments for 3D model */
 @media (max-width: 1024px) {
   .robo {
-    display: none;
+    transform: scale(0.8) translateX(10%) translateY(15%);
   }
 }
