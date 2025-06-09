@@ -6,8 +6,6 @@ import worldmap from './backgrounds/world-map.png';
 import logo from './logo/logo-black.png';
 import logotext from './logo/logo-text-black.png';
 
-import pc from './personal/pc.png';
-
 import githubLogo from './icons/githubLogo.png';
 import linkedinLogo from './icons/linkedinLogo.png';
 import instaLogo from './icons/instaLogo.png';
@@ -55,7 +53,6 @@ export {
   worldmap,
   logo,
   logotext,
-  pc,
   githubLogo,
   linkedinLogo,
   instaLogo,
