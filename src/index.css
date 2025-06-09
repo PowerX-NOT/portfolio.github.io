@@ -67,6 +67,43 @@
   letter-spacing: -2px;
 }
 
+/* Mobile responsive adjustments for navigation menu items */
+@media (max-width: 640px) {
+  #about {
+    margin-left: -20px;
+    font-size: 60px;
+  }
+
+  #projects {
+    margin-left: -2px;
+    font-size: 60px;
+  }
+
+  #contact {
+    margin-left: -15px;
+    font-size: 55px;
+    letter-spacing: -1px;
+  }
+}
+
+@media (max-width: 450px) {
+  #about {
+    margin-left: -15px;
+    font-size: 50px;
+  }
+
+  #projects {
+    margin-left: -2px;
+    font-size: 50px;
+  }
+
+  #contact {
+    margin-left: -10px;
+    font-size: 45px;
+    letter-spacing: -1px;
+  }
+}
+
 .hero-heading {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
@@ -228,4 +265,11 @@
   border: none;
   transform: scale(1.4) translateX(20%);
   transform-origin: right center;
+}
+
+/* Mobile responsive adjustments for 3D model */
+@media (max-width: 1024px) {
+  .robo {
+    display: none;
+  }
 }

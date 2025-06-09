@@ -16,9 +16,9 @@ const ServiceCard = ({ index, title, icon }) => {
           scale: 1,
           speed: 450,
         }}
-        className="bg-jetLight rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
+        className="bg-jetLight rounded-[20px] py-5 px-6 xs:px-12 min-h-[280px] flex justify-evenly items-center flex-col">
         <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-        <h3 className="text-taupe text-[18px] font-bold text-center">
+        <h3 className="text-taupe text-[16px] xs:text-[18px] font-bold text-center">
           {title}
         </h3>
       </div>
@@ -36,11 +36,11 @@ const About = () => {
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
+        className="mt-4 text-taupe text-[16px] xs:text-[18px] max-w-3xl leading-[26px] xs:leading-[30px]">
 Currently pursuing my degree in BCA at Jain University, I'm a tech enthusiast and developer with a passion for software engineering and Android development. I specialize in creating innovative solutions, building custom ROMs, and working on Android kernel development. With a keen interest in programming, system-level projects, and automation, I enjoy exploring how technology can solve real-world problems
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-6 xs:gap-10 justify-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

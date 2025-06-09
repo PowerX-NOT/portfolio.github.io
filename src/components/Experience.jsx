@@ -23,7 +23,7 @@ const ExperienceCard = ({ experience }) => (
     }}
     date={
       <div>
-        <h3 className="text-dim text-[18px] font-bold font-beckman">
+        <h3 className="text-dim text-[14px] xs:text-[16px] md:text-[18px] font-bold font-beckman">
           {experience.date}
         </h3>
       </div>
@@ -39,11 +39,11 @@ const ExperienceCard = ({ experience }) => (
       </div>
     }>
     <div>
-      <h3 className="text-jetLight text-[24px] font-bold font-beckman tracking-[2px]">
+      <h3 className="text-jetLight text-[18px] xs:text-[20px] md:text-[24px] font-bold font-beckman tracking-[1px] xs:tracking-[2px]">
         {experience.title}
       </h3>
       <p
-        className="text-taupe text-[22px] font-semibold font-overcameBold tracking-[1px]"
+        className="text-taupe text-[16px] xs:text-[18px] md:text-[22px] font-semibold font-overcameBold tracking-[0.5px] xs:tracking-[1px]"
         style={{ margin: 0 }}>
         {experience.company_name}
       </p>
@@ -55,10 +55,10 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} sm:pl-16 pl-[2rem]`}>
+        <p className={`${styles.sectionSubText} sm:pl-16 pl-[1rem] xs:pl-[2rem]`}>
           What I've done so far
         </p>
-        <h2 className={`${styles.sectionHeadText} sm:pl-16 pl-[2rem]`}>
+        <h2 className={`${styles.sectionHeadText} sm:pl-16 pl-[1rem] xs:pl-[2rem]`}>
           Experience.
         </h2>
       </motion.div>
@@ -93,11 +93,11 @@ const Experience = () => {
             }>
             <button
               className="live-demo flex justify-between 
-              sm:text-[18px] text-[14px] text-timberWolf 
-              font-bold font-beckman items-center py-5 pl-3 pr-3 
-              whitespace-nowrap gap-1 sm:w-[148px] sm:h-[58px] 
-              w-[125px] h-[46px] rounded-[10px] bg-jetLight 
-              sm:mt-[22px] mt-[16px] hover:bg-battleGray 
+              text-[12px] xs:text-[14px] sm:text-[18px] text-timberWolf 
+              font-bold font-beckman items-center py-3 xs:py-4 sm:py-5 pl-2 xs:pl-3 pr-2 xs:pr-3 
+              whitespace-nowrap gap-1 w-[110px] xs:w-[125px] sm:w-[148px] h-[40px] xs:h-[46px] sm:h-[58px] 
+              rounded-[10px] bg-jetLight 
+              mt-[16px] xs:mt-[18px] sm:mt-[22px] hover:bg-battleGray 
               hover:text-eerieBlack transition duration-[0.2s] 
               ease-in-out"
               onClick={() =>
@@ -120,8 +120,8 @@ const Experience = () => {
               <img
                 src={download}
                 alt="download"
-                className="download-btn sm:w-[26px] sm:h-[26px] 
-                w-[23px] h-[23px] object-contain"
+                className="download-btn w-[20px] h-[20px] xs:w-[23px] xs:h-[23px] sm:w-[26px] sm:h-[26px] 
+                object-contain"
               />
             </button>
           </VerticalTimelineElement>
