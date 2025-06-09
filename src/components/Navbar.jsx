@@ -16,12 +16,16 @@ const Navbar = () => {
         <Link
           to="/"
           className="flex items-center gap-2"
-          onClick={() => {
+          onClick={(e) => {
+            e.preventDefault();
             setActive('');
-            window.scrollTo(0, 0);
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
           }}>
           <img
-            src={logo} // your logo comes here
+            src={logo}
             alt="logo"
             className="sm:w-[50px] sm:h-[50px] w-[45px] h-[45px] object-contain"
           />
